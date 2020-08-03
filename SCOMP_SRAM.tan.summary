@@ -1,0 +1,46 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 22.044 ns
+From           : CHIP_EMULATOR:inst4|SRAM~160
+To             : SRAM_DQ[0]
+From Clock     : clk_50
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'altpll0:inst1|altpll:altpll_component|_clk0'
+Slack          : 21.677 ns
+Required Time  : 12.50 MHz ( period = 80.000 ns )
+Actual Time    : 27.29 MHz ( period = 36.646 ns )
+From           : CHIP_EMULATOR:inst4|SRAM~160
+To             : SCOMP:inst|AC[0]
+From Clock     : altpll0:inst1|altpll:altpll_component|_clk0
+To Clock       : altpll0:inst1|altpll:altpll_component|_clk0
+Failed Paths   : 0
+
+Type           : Clock Hold: 'altpll0:inst1|altpll:altpll_component|_clk0'
+Slack          : -5.752 ns
+Required Time  : 12.50 MHz ( period = 80.000 ns )
+Actual Time    : N/A
+From           : SCOMP:inst|AC[4]
+To             : slow_sram:inst7|lpm_ff0:b2v_inst80|lpm_ff:lpm_ff_component|dffs[4]
+From Clock     : altpll0:inst1|altpll:altpll_component|_clk0
+To Clock       : altpll0:inst1|altpll:altpll_component|_clk0
+Failed Paths   : 6183
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 6183
+
+--------------------------------------------------------------------------------------
+
